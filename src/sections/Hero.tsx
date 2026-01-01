@@ -204,7 +204,9 @@ const Hero: FC = () => {
         >
           I build{' '}
           <span className='highlight'>
-            test automation frameworks that scale
+            test automation frameworks
+            <br />
+            that scale
           </span>
         </motion.h3>
         <motion.p

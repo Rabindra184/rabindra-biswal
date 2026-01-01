@@ -2,6 +2,7 @@
   position: fixed;
   bottom: 0;
   left: 4rem;
+  z-index: 10;
   &-list {
     list-style-type: none;
     display: flex;
@@ -35,7 +36,7 @@
       }
     }
     &::after {
-      content: "";
+      content: '';
       display: block;
       width: 2px;
       height: 90px;
@@ -45,6 +46,9 @@
   }
   @media screen and (max-width: 1080px) {
     left: 2rem;
+  }
+  @media screen and (max-width: 1020px) {
+    left: 1rem;
   }
   @media screen and (max-width: 768px) {
     display: none;
