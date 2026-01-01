@@ -1,11 +1,21 @@
-import { Link } from 'lucide-react'
+import { Github, MessageCircle, Send } from 'lucide-react'
 
 function SocialIcons() {
   const socialLinks = [
     {
-      name: 'LinkedIn',
-      icon: <Link />,
-      link: 'https://www.linkedin.com/in/rabindra-biswal',
+      name: 'GitHub',
+      icon: <Github />,
+      link: 'https://github.com/Rabindra184',
+    },
+    {
+      name: 'Discord',
+      icon: <MessageCircle />,
+      link: 'https://discord.com/users/rabindra_biswal', // Replace with your Discord profile
+    },
+    {
+      name: 'Telegram',
+      icon: <Send />,
+      link: 'https://t.me/rabindra_biswal', // Replace with your Telegram username
     },
   ]
 
