@@ -1,0 +1,37 @@
+{
+  "name": "rabindra-portfolio",
+  "version": "4.0.0",
+  "description": "Rabindra Biswal's portfolio (Senior QA Automation Engineer) built with Next.js and TypeScript.",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "export": "next build && next export",
+    "deploy": "npm run build && touch out/.nojekyll"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@types/node": "^20.17.11",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "framer-motion": "^10.18.0",
+    "lucide-react": "^0.469.0",
+    "next": "^14.2.29",
+    "prop-types": "^15.8.1",
+    "react": "18.2.0",
+    "react-animated-cursor": "^2.11.2",
+    "react-dom": "18.2.0",
+    "typescript": "^5.7.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.50.1",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.2.29",
+    "sass": "^1.83.0"
+  }
+}
