@@ -218,7 +218,7 @@ function About() {
           <div className='overlay-border'></div>
           <div className='about-grid-photo-container'>
             <Image
-              src='/etc/image.jpeg'
+              src={`${process.env.NODE_ENV === 'production' ? '/rabindra-biswal' : ''}/etc/image.jpeg`}
               alt='Rabindra Biswal - Senior QA Automation Engineer'
               fill
               sizes='(max-width: 768px) 100vw, 50vw'
