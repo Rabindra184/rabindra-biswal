@@ -218,7 +218,9 @@ function About() {
           <div className='overlay-border'></div>
           <div className='about-grid-photo-container'>
             <Image
-              src={`${process.env.IS_GITHUB_PAGES === 'true' ? '/rabindra-biswal' : ''}/etc/image.jpeg`}
+              src={`${
+                process.env.NEXT_PUBLIC_IS_GITHUB_PAGES === 'true' ? '/rabindra-biswal' : ''
+              }/etc/image.jpeg`}
               alt='Rabindra Biswal - Senior QA Automation Engineer'
               fill
               sizes='(max-width: 768px) 100vw, 50vw'

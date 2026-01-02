@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const isGitHubPages = process.env.IS_GITHUB_PAGES === 'true'
+const isGitHubPages = process.env.NEXT_PUBLIC_IS_GITHUB_PAGES === 'true'
 
 const nextConfig = {
   reactStrictMode: true,
