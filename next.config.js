@@ -1,11 +1,13 @@
 /** @type {import('next').NextConfig} */
+const isGitHubPages = process.env.GITHUB_PAGES === 'true';
+
 const nextConfig = {
   reactStrictMode: true,
 
   // GitHub Pages configuration
   output: 'export',
-  basePath: process.env.NODE_ENV === 'production' ? '/rabindra-biswal' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/rabindra-biswal/' : '',
+  basePath: isGitHubPages ? '/rabindra-biswal' : '',
+  assetPrefix: isGitHubPages ? '/rabindra-biswal/' : '',
 
   // Optimize images
   images: {
