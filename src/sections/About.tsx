@@ -1,4 +1,4 @@
-import { motion, useInView, useAnimation } from 'framer-motion'
+import { motion, useAnimation } from 'framer-motion'
 import Image from 'next/image'
 import { useEffect, useRef, useState, useCallback } from 'react'
 import { isInViewport } from '@/utils/scrollAnimation'
@@ -76,7 +76,6 @@ const variants = {
 function About() {
   const ref = useRef<HTMLDivElement>(null)
   const techSectionRef = useRef<HTMLDivElement>(null)
-  const isInView = useInView(ref)
   const [isMobile, setIsMobile] = useState(false)
   const [isVisible, setIsVisible] = useState(false)
   const controls = useAnimation()
@@ -219,7 +218,9 @@ function About() {
           <div className='about-grid-photo-container'>
             <Image
               src={`${
-                process.env.NEXT_PUBLIC_IS_GITHUB_PAGES === 'true' ? '/rabindra-biswal' : ''
+                process.env.NEXT_PUBLIC_IS_GITHUB_PAGES === 'true'
+                  ? '/rabindra-biswal'
+                  : ''
               }/etc/image.jpeg`}
               alt='Rabindra Biswal - Senior QA Automation Engineer'
               fill
