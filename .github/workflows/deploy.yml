@@ -34,11 +34,11 @@ jobs:
         run: npm run build
         env:
           NODE_ENV: production
-          NEXT_PUBLIC_IS_GITHUB_PAGES: 'true'
+          NEXT_PUBLIC_IS_GITHUB_PAGES: 'false'
           NEXT_PUBLIC_EMAILJS_PUBLIC_KEY: ${{ secrets.EMAILJS_PUBLIC_KEY }}
           NEXT_PUBLIC_EMAILJS_SERVICE_ID: ${{ secrets.EMAILJS_SERVICE_ID }}
           NEXT_PUBLIC_EMAILJS_TEMPLATE_ID: ${{ secrets.EMAILJS_TEMPLATE_ID }}
-          NEXT_PUBLIC_SITE_URL: https://Rabindra184.github.io/rabindra-biswal
+          NEXT_PUBLIC_SITE_URL: https://rabindrabiswal.is-a.dev
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
